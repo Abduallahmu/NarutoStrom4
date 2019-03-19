@@ -57,7 +57,7 @@ namespace NarutoStrom4
                 routes.MapRoute(
                     name: "FeverRule",
                     template: "FeverCheck",//url
-                    defaults: new { controller = "Blog", action = "ReadArticle" });// c
+                    defaults: new { controller = "Home", action = "FeverCheck" });// c
 
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
