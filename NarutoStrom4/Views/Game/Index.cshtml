@@ -1,0 +1,71 @@
+﻿@model GuessingGame
+@{
+    ViewBag.Title = "Guessing Game";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@if (Model.IsWin == false)
+{
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(
+                false,
+                "",
+                new { @class = "text-danger"} )
+
+            <div class="form-group">
+                @Html.LabelFor(
+                    m => m.PlayerName,
+                    htmlAttributes: new { @class = "control-label col-md-3"})
+
+                <div class="col-md-9">
+                    @Html.EditorFor(
+                        m => m.PlayerName,
+                        new { htmlAttributes = new {@class = "form-control"} })
+
+                    @Html.ValidationMessageFor(
+                        m => m.PlayerName,
+                        "",
+                        new { @class = "text-danger"} )
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(
+                m => m.Guess,
+                htmlAttributes: new { @class = "control-label col-md-3" })
+
+                <div class="col-md-9">
+                    @Html.EditorFor(
+                    m => m.Guess,
+                    new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(
+                    m => m.Guess,
+                    "",
+                    new { @class = "text-danger" })
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-9">
+                    <input type="submit" value="Guess" class="btn btn-success" />
+                </div>
+            </div>
+
+
+        </div>
+    }
+}
+@if (Model.Guess != 0)
+{
+    <h2>@ViewBag.message</h2>
+}
+
+<div>
+    @Html.ActionLink("Start Over", "Index", "Guessing" , null , new { @class = "btn btn-outline-info" } )
+</div>

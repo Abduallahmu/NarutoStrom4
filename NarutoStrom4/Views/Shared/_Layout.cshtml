@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end">
+            <!-- Brand/logo -->
+
+            <a id="navbar-brand" href="#"><img src="~/IMG/icon.png" style="width:40px;" />Naruto Shippuden Ultimate Ninja Storm 4</a>
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+
+                    <a class="nav-link" asp-controller="Home" asp-action="Index"><i class="material-icons">&#xe30a;</i>Home</a>
+
+                </li>
+
+                <li>
+
+                    <a class="nav-link" asp-controller="Home" asp-action="About"><i class="material-icons">&#xe0e0;</i>About</a>
+                </li>
+
+
+                <li>
+
+                    <a class="nav-link" asp-controller="Home" asp-action="Contact"><i class="material-icons">&#xe0b7;</i>Contact</a>
+                </li>
+                <li>
+
+                    <a class="nav-link" asp-controller="Home" asp-action="Projects"><i class="material-icons">&#xe3e0;</i>Projects</a>
+                </li>
+                <li>
+                    <a class="nav-link" asp-controller="Home" asp-action="FeverCheck">
+                        <i style='font-size:24px' class='fas'>&#xf7e4;</i>
+                        Fever Check
+                    </a>
+                </li>
+                <li>
+
+                    <a class="nav-link" asp-controller="Game" asp-action="Index">
+                        <i style='font-size:24px' class='fas'>&#xf11b;</i>
+                        Guessing Game
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+    <div class="container-fluid" style="min-height: calc(100vh - 162px);">
+        @RenderBody()
+    </div>
+    <footer>
+        <p>Abdullah Moaalem &copy;</p> @DateTime.Now.ToString("yyyy")
+    </footer>
+</body>
+</html>

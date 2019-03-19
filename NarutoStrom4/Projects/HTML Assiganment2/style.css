@@ -1,0 +1,116 @@
+header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(247, 243, 8);
+  font-size: 15px;
+}
+
+
+nav>ul>li>a {
+  color: rgb(49, 160, 6);
+}
+
+nav>ul>li {
+  float: left;
+  padding: 20px;
+  list-style-type: none;
+  background-color: rgb(0, 0, 0);
+  font-family: fantasy;
+}
+
+#naruto-text2 {
+  color: rgb(4, 62, 255);
+  font-family: serif;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+header>h1 {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+#naruto-text {
+  color: rgb(6, 202, 170);
+
+  width: 50%;
+  border: solid rgb(35, 68, 2);
+  background-color: black;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 1024px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+li {
+  color: chartreuse;
+  font-family: unset;
+}
+
+nav {
+    padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+img {
+  width: 1000px;
+}
+
+.best {
+  color: chocolate;
+  font-family: initial;
+}
+
+.article-text{
+  width: 40%;
+  float: left;
+  font-family: serif;
+  color: aliceblue;
+  margin: 7px;
+}
+
+
+.article-text2{
+  width: 40%;
+  float: left;
+  font-family: serif;
+  color: aliceblue;
+  margin: 7px;
+}
+
+
+main {
+  width: 70%;
+  float: left;
+}
+
+aside{
+  width: 30%;
+  float: left;
+}
+
+.text{
+  color: white;
+}
+
+.Abdullah {
+  font-family: fantasy;
+  color: yellow;
+  content: "";
+  clear: both;
+  display: table;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

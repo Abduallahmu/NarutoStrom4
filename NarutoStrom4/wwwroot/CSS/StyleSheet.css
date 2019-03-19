@@ -1,0 +1,82 @@
+﻿body {
+    background-image: url('../img/naruto.jpg');
+}
+
+h1 {
+    color: white;
+}
+
+h2{
+    color:white;
+}
+#home-text {
+    color: white;
+    font-size:x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar-brand {
+    color: black;
+    position: absolute;
+    left: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+    text-shadow: -2px -2px #FFD700;
+    text-shadow: 0px 1px 1px rgb(251, 255, 0);
+}
+
+.text-about {
+    margin: 0.5em 0;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-top:100px;
+}
+.btn {
+    background-color:forestgreen;
+   color:white;
+}
+.col-md-3{
+    color:yellow;
+    font-size:large;
+}
+footer {
+    padding-bottom: 0px;
+    background: #cdcdcd;
+    padding: 1em 0;
+    font-size: 110%;
+    line-height: 150%;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    height: 100px;
+    margin-bottom: 0px;
+    
+    position: relative;
+    background-color:black;
+    color:chartreuse;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
