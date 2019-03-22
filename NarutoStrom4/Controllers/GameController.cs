@@ -15,10 +15,11 @@ namespace NarutoStrom4.Controllers
         {
             rand = new Random();
         }
+        [HttpGet]
         public ActionResult Index()
         {
             HttpContext.Session.SetInt32("Answer", rand.Next(1, 100));
-
+            
             return View(new GuessingGame());
         }
 
@@ -27,10 +28,12 @@ namespace NarutoStrom4.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewBag.message = model.GuessWasCorrect((int)HttpContext.Session.GetInt32("Answer"));
+                TempData["message"] = model.GuessWasCorrect((int)HttpContext.Session.GetInt32("Answer"));
+                if (model.IsWin)
+                {
+                    return RedirectToAction("Index");
+                }
             }
-
-
             return View(model);
         }
     }
